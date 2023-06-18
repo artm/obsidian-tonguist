@@ -1,3 +1,4 @@
-npm i
-# send it to the test vault
-rsync ./ /dist -rvu --exclude=dist --exclude=node_modules --exclude .git --exclude .devcontainer --delete --delete-excluded
+# initially / when changing dependencies
+npm install
+# build and send to the test vault
+npm run dist
